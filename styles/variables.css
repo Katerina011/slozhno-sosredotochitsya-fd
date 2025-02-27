@@ -2,3 +2,29 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image.png);
+  --accent-color: #FF0070;
+  --color: #F1B2CE;
+  --title-color:#DB00FF;
+  --section-title-color: #FF0070;
+  --heading-color: #000028;
+  --border-color: 255, 0, 112;
+  --border: 1px solid rgb(var(--border-color));
+  --border-transparent: 1px solid rgb(var(--border-color), 0.4);
+  --button-text:  #FF0070;
+  --size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --margin-content: 40px;
+  --margin-section: 50px;
+  --padding-body: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --margin-content: 60px;
+    --margin-section: 80px;
+    --padding-body: 20px;
+  }
+}

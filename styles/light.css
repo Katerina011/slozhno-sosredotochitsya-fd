@@ -5,12 +5,42 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
+  --color: #353430;
+  --title-color: #FFC2E6;
+  --section-title-color: #353430;
+  --heading-color: #000028;
+  --border-color: 53, 52, 48;
+  --border: 1px solid rgb(var(--border-color));
+  --border-transparent: 1px solid rgb(var(--border-color), 0.4);
+  --button-text: #353430;
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #FF8DCB;
+    --color: #353430;
+    --title-color: #FFC2E6;
+    --section-title-color: #353430;
+    --heading-color: #000028;
+    --border-color: 53, 52, 48;
+    --button-text: #353430;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #FF8DCB;
+    --color: #353430;
+    --title-color: #FFC2E6;
+    --section-title-color: #353430;
+    --heading-color: #000028;
+    --border-color: 53, 52, 48;
+    --button-text: #353430;
+  }
 }
