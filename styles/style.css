@@ -14,8 +14,6 @@
   display: grid;
   grid-template-rows: 35vh min-content 35vh;
   align-items: center;
-  padding-inline: var(--padding-body);
-  padding-block-start: var(--padding-body);
   min-block-size: 668px;
   block-size: 100vh;
 }
@@ -25,7 +23,7 @@
 }
 
 .decor-dark {
-  display: none;
+  display: block;
   position: absolute;
   right: calc(28px + var(--padding-body));
   top: var(--padding-body);
@@ -45,6 +43,10 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.theme-light .decor-dark  {
+  display: none;
 }
 
 .decorated-zone::before {
@@ -69,12 +71,17 @@
   border-block-end: var(--border);
 }
 
+.header__theme-menu {
+  padding-inline-end: var(--padding-body);
+  padding-block-start: var(--padding-body);
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 13px;
+  gap: 11px;
 }
 
 .header__theme-menu-button {
@@ -83,9 +90,11 @@
   background-color: transparent;
   text-align: center;
   color: var(--button-text);
+  text-transform: lowercase;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
+  padding-block: 2.5px;
 }
 
 .header__theme-menu-button:focus, link:focus {
@@ -99,21 +108,19 @@
 
 .header__theme-menu-button:hover {
   outline: var(--border-transparent);
-  outline-offset: 2px;
 }
 
 .header__theme-menu-button:disabled {
-  outline: var(--border);
-  outline-offset: 2px;
+  outline: var(--border); 
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: var(--border);
-  outline-offset: 2px;
 }
 
 .header__title {
+  padding-inline-start: var(--padding-body);
   font-size: var(--size-title);
   line-height: 0.825;
   color: var(--title-color);
@@ -121,7 +128,7 @@
 }
 
 .header__title-block {
-  inline-size: 100%;
+  margin-inline: var(--padding-body);
 }
 
 .content {
@@ -163,7 +170,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid currentColor;
 }
 
 .link:focus-visible {

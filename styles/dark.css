@@ -16,18 +16,6 @@
   --button-text:  #FF0070;
 }
 
-.theme-dark .page {
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  --accent-color: #FF0070;
-  --color: #F1B2CE;
-  --title-color:#DB00FF;
-  --section-title-color: #FF0070;
-  --heading-color: #000028;
-  --border-color: 255, 0, 112;
-  --button-text:  #FF0070;
-}
-
-.theme-dark .decor-dark {
+.theme-dark .decor-dark  {
   display: block;
 }
