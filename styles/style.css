@@ -45,7 +45,7 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
-.theme-light .decor-dark  {
+.theme-light .decor-dark {
   display: none;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .header__theme-menu-button:disabled {
-  outline: var(--border); 
+  outline: var(--border);
 }
 
 .header__theme-menu-button_active {

@@ -13,7 +13,7 @@
     margin-block-end: 15px;
   }
 
-  .section-why, .section-advices{
+  .section-why, .section-advices {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -71,9 +71,6 @@
 
   .header__theme-menu {
     align-self: start;
-  }
-
-  .header__theme-menu {
     padding-inline-end: 0;
   }
 
