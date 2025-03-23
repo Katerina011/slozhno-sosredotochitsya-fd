@@ -18,6 +18,10 @@
   --button-text: #353430;
 }
 
+.theme-light .decor-dark {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
